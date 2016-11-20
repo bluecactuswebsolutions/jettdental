@@ -1,0 +1,13 @@
+<div class="pageWrapper">
+  <ul class="services">
+    <service-item ng-repeat="service in sCtrl.services" text="{{service.name}}" ng-mouseenter="sCtrl.description=service.description; sCtrl.slide=true;" ng-click="sCtrl.description=service.description; sCtrl.slide=true;" ng-mouseleave="sCtrl.slide=false;"></serviceItem>
+  </ul>
+</div>
+
+<div class="serviceDescr" ng-class="{slideDescr: sCtrl.slide}">
+  <i class="fa fa-times" aria-hidden="true" ng-click="sCtrl.slide=false"></i>
+  <p>
+    {{sCtrl.description}}
+  </p>
+</div>
+<footer></footer>

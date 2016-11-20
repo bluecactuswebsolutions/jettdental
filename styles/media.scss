@@ -1,0 +1,281 @@
+@import "variables.scss";
+@import "buttons.scss";
+//============= media =====================//
+
+@media (min-width: 1262px) {
+
+}
+
+@media (max-width: 1261px) {
+  .header {
+    .col1, .col3 {
+      font-size: .8rem;
+    }
+  }
+
+}
+
+
+@media (max-width:1080px) {
+  .slider {
+    padding-left: 6%;
+  }
+  // .floatBox {
+  //   width: 40%;
+  //   right: -40%;
+  // }
+  .mission {
+    h4 {
+      font-size: 1rem;
+    }
+    div {
+      font-size: .9rem;
+    }
+  }
+
+  .services {
+    width: 70%;
+    margin-bottom: 0;
+    li {
+      font-size: 1.2rem;
+      padding: 5% 0;
+    }
+  }
+
+  .serviceDescr {
+    display: none;
+  }
+}
+
+@media (max-width:1080px) {
+  .slider {
+    li {
+      margin-top: 12%;
+      h5 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .ResourcePage {
+    li {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width:1078px) {
+  .header {
+    .topNav {
+      li {
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+@media (max-width:1023px) {
+  .header{
+    .col1 {
+      width: 35%;
+      margin-left: 2%;
+    }
+  }
+}
+
+@media (max-width: 1008px) {
+  .header {
+    .col1, .col3 {
+      display: none;
+    }
+    .col2 {
+      width: 100%;
+      margin: 0;
+      img {
+        width: 30%;
+      }
+    }
+    .topNav {
+      width: 100%;
+      padding: 0;
+      li {
+        width: 15%;
+        &:nth-child(1) {
+          margin-left: 6%;
+        }
+      }
+    }
+  }
+
+  // buttons
+  .submit {
+    width: 80%;
+    margin: 1% 11%;
+  }
+}
+
+@media (max-width:848px) {
+  .header {
+    .topNav {
+      li {
+        font-size: .75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 833px) {
+  .header {
+    .topNav {
+      li {
+        font-size: .7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    border-bottom: .1rem solid $dark1;
+    .topNav {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .mobileHeader {
+    display: block;
+    .fa {
+      font-size: 1.2rem;
+      left: 1%;
+      top: 10%;
+      position: fixed;
+      color: white;
+      background-color: $transGray;
+      border-radius: .2rem;
+      padding: 1%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .mobileNavList {
+    z-index: 10;
+    top: 15%;
+    display: block;
+    position: fixed;
+    width: 90%;
+    margin-left: -106%;
+    transition-duration: .5s;
+    background-color: $dark1;
+    padding: 0 1% 0 1%;
+    li {
+      width: 99%;
+      display: block;
+      list-style-type: none;
+      color: white;
+      border-bottom: .05rem solid white;
+      padding: 1%;
+      font-size: 1.1rem;
+      &:nth-child(5) {
+        border-bottom: none;
+      }
+      &:hover {
+        color: $light2;
+        cursor: pointer;
+      }
+    }
+  }
+  .navActive {
+    margin-left: 0;
+  }
+  .currPage {
+    background-color: $lightGray;
+  }
+
+  .pageWrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  // contact form
+  .contactform {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  .contactP {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  // resource page
+  .ResourcePage {
+    margin: 0;
+    padding: 0;
+    li {
+      width: 100%;
+      padding-left: 3%;
+    }
+  }
+  // footer
+
+  .footContent {
+    bottom: 0;
+    li {
+      font-size: .8rem;
+      .fa {
+        font-size: 3rem;
+      }
+    }
+    .location {
+      font-size: .7rem;
+    }
+  }
+
+  // serices
+  .services {
+    margin-top: 0;
+    li {
+      &:nth-child(1) {
+        margin-top: 0;
+        padding-top: 1%;
+      }
+    }
+  }
+  // members
+  .MemberSection {
+     ul {
+       padding: 0;
+       margin: 0;
+       li {
+         display: block;
+         margin: 0;
+         text-align: center;
+         padding: 0;
+         &:nth-child(1) {
+           margin: 0;
+           width: 96%;
+           img {
+             width: 50%;
+             margin: 0;
+           }
+         }
+         &:nth-child(2) {
+           margin: 0;
+           padding: 0 5%;
+           width: 90%;
+         }
+       }
+     }
+  }
+
+}
+
+
+
+//========================================//

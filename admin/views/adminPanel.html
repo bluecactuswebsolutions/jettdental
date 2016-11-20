@@ -1,0 +1,6 @@
+<div class="pageWrapper">
+  <h4 class="centerText" ng-if="AdmCtrl.emptyBucket">You have no messages in your message bucket!</h4>
+  <ul id="messageList">
+    <message-bar msg='message' ng-repeat="message in AdmCtrl.messages | orderBy: 'timeStamp'"></message-bar>
+  </ul>
+</div>

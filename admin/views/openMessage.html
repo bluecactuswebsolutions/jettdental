@@ -1,0 +1,18 @@
+<div class="pageWrapper">
+  <ul class="messageCtrls">
+    <li><a class="backArrow" ui-sref="admin"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to Inbox</a></li>
+    <li><button ng-click="MsgCtrl.readMessage(!MsgCtrl.msg.read)" id="unread" type="button" name="unread">Mark as {{MsgCtrl.read}} <i class="fa fa-envelope" aria-hidden="true"></i></button> <button ng-click="MsgCtrl.delete()" id="delete" type="button" name="delete">Delete <i class="fa fa-trash" aria-hidden="true"></i></button></li>
+  </ul>
+  <div class="openMessage">
+    <ul>
+      <li><span>From: </span>{{MsgCtrl.message.name}} <span>| Reply to: </span><a href="mailto:" + {{MsgCtrl.message.email}} + "">{{MsgCtrl.message.email}}</a></li>
+      <hr>
+      <li>{{MsgCtrl.message.timeStamp}}</li>
+      <li>
+        <p>
+          {{MsgCtrl.message.question}}
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>

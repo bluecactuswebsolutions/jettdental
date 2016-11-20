@@ -1,0 +1,55 @@
+<img id="loginLogo" src="assets/logo.png" alt="" />
+<a class="smallLink" ui-sref="home"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> View Web Page</a>
+<div class="bar">
+  <ul>
+    <li></li>
+    <li><h6>Admin Inbox</h6></li>
+    <li ng-click="AHCtrl.openClose()"><i class="fa fa-cog" aria-hidden="true"></i></li>
+  </ul>
+</div>
+
+
+<div class="floatBox {{AHCtrl.floatClass}}">
+  <ul>
+    <li ng-click="AHCtrl.openClose()"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></li>
+    <li ng-click="AHCtrl.signOut();">Log out</li>
+    <li ng-click="AHCtrl.updateCreds=true; AHCtrl.floatClass='';">Change password</li>
+    <!-- <li>Change email</li> -->
+  </ul>
+</div>
+
+
+<div class="changeCredentials" ng-if="AHCtrl.updateCreds">
+  <i ng-click="AHCtrl.updateCreds=false;" class="fa fa-times" aria-hidden="true"></i>
+  <h3>Change Password</h3>
+  <ul>
+    <!-- <li ng-if="AHCtrl.badCurrPW" class="err">
+      Please enter your current password.
+    </li>
+    <li>
+      <input ng-keyDown="AHCtrl.badCurrPW=false; AHCtrl.badCreds=false;" type="password" name="oldPassword" value="" placeholder="Current Password" ng-model="cred.currPassword">
+    </li> -->
+    <li ng-if="AHCtrl.badNewPW" class="err">
+      Please enter a new password.
+    </li>
+    <li>
+      <input ng-keyDown="AHCtrl.badNewPW=false; AHCtrl.badCreds=false;" type="password" name="newPassword" value="" placeholder="New Password" ng-model="cred.password">
+    </li>
+    <li ng-if="AHCtrl.badMatch" class="err">
+      Passwords do not match.
+    </li>
+    <li>
+      <input ng-keyDown="AHCtrl.badMatch=false; AHCtrl.badCreds=false;" type="password" name="confirmPassword" value="" placeholder="Confirm New Password" ng-model="cred.confirmPassword">
+    </li>
+    <li>
+      <button class="submit" type="button" name="button" ng-click="AHCtrl.updatePassword(cred)">Submit</button>
+    </li>
+    <li ng-if="AHCtrl.badCreds" class="err">
+      Please fill out all fields.
+    </li>
+    <li ng-if="AHCtrl.broken" class="err">
+      Sorry, there was a technical issue. Please try again later...
+    </li>
+  </ul>
+
+</div>

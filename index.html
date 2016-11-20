@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="jett dental, dentist in columbia sc, dentist, dr. kevin jett, dr. ben jett, jett dental llc">
+    <meta name="description" content="Jett Dental is a dental practice based out of Columbia, SC. Our goal is to provide our patients with excellent service in a comfortable environment.">
+    <title>Jett Dental</title>
+    <link rel="shortcut icon" src='http://jettdental.com/assets/favicon.ico'>
+    <link href='https://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/style-min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/media.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-app="jett">
+
+    <ui-view name="header"></ui-view>
+    <ui-view name="chewy"></ui-view>
+
+    <script src="node_modules/angular/angular.js" charset="utf-8"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="node_modules/moment/min/moment.min.js" charset="utf-8"></script>
+
+    <script src="common/common-module.js" charset="utf-8"></script>
+    <script src="common/common-directives.js" charset="utf-8"></script>
+    <script src="common/common-service.js" charset="utf-8"></script>
+    <script src="common/common-controller.js" charset="utf-8"></script>
+
+    <script src="node_modules/angular-cookies/angular-cookies.min.js" charset="utf-8"></script>
+
+    <script src="admin/adm.module.js" charset="utf-8"></script>
+    <script src="admin/adm.service.js" charset="utf-8"></script>
+    <script src="admin/adm.controller.js" charset="utf-8"></script>
+    <script src="admin/adm.directive.js" charset="utf-8"></script>
+
+  </body>
+</html>

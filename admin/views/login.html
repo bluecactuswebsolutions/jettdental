@@ -1,0 +1,10 @@
+<div class="login">
+  <ul>
+    <li class="err" ng-if="LgnCtrl.badEmail">Please enter an email address</li>
+    <li><input ng-keyDown="LgnCtrl.resetAll()" ng-model="credentials.email" type="text" name="email" value="" placeholder="Email"></li>
+    <li class="err" ng-if="LgnCtrl.badPassword">Please enter a password</li>
+    <li><input ng-keyDown="LgnCtrl.resetAll()" ng-model="credentials.password" type="password" name="password" value="" placeholder="Password"></li>
+    <li><input ng-click="LgnCtrl.login(credentials)" id="login" type="submit" name="submit" value="Login"></li>
+    <li class="err" ng-if="LgnCtrl.badLogin">Incorrect Email or Password</li>
+  </ul>
+</div>

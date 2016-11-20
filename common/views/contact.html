@@ -1,0 +1,27 @@
+<div class="pageWrapper">
+  <h3>CONTACT US</h3>
+  <div class="contactP">
+    We want to hear from you. You may contact us via phone <a href="tel:+18037993368">(803) 799-3368</a>. Use the contact form
+    below to contact us via email. Every effort will be made to respond to your email in one
+    business day. Please do not send private health information via email.
+  </div>
+  <form class="contactform">
+        <h6 ng-if="ctrl.noName">Please enter your name</h6>
+        <input ng-keypress="ctrl.noName=false; ctrl.nameClass='input';" class="{{ctrl.nameClass}}" type="text" name="name" value="" placeholder="Name" ng-model="submission.name">
+
+        <h6 ng-if="ctrl.noEmail">Please enter your email address</h6>
+        <input ng-keypress="ctrl.noEmail=false; ctrl.emailClass='input';" class="{{ctrl.emailClass}}" type="text" name="email" value="" placeholder="Email" ng-model="submission.email">
+
+        <h6 ng-if="ctrl.noConfirmEmail">Email addresses do not match</h6>
+        <input ng-keyPress="ctrl.noConfirmEmail=false; ctrl.confirmEmailClass='input';" class="{{ctrl.confirmEmailClass}}" type="text" name="confirmEmail" value="" placeholder="Confirm Email" ng-model="submission.confirmEmail">
+
+        <h6 ng-if="ctrl.noQuestion">Please include message content</h6>
+        <textarea ng-keypress="ctrl.noQuestion=false; ctrl.questionClass='input';" class="{{ctrl.questionClass}}" name="question" rows="8" cols="40" placeholder="Questions or Comments" ng-model="submission.question"></textarea>
+    <input class="submit" type="submit" ng-click="ctrl.submit(submission)" name="submit" value="submit">
+  </form>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.7383836313497!2d-81.01317948524424!3d33.99925298062039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8baca589f9247%3A0xd496b74e406bfbfc!2s2329+Devine+St%2C+Columbia%2C+SC+29205!5e0!3m2!1sen!2sus!4v1467480101362" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+<footer></footer>

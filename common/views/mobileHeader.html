@@ -1,0 +1,19 @@
+<!-- 
+
+<ul class="contactBar">
+  <li><i class="fa fa-facebook-square" aria-hidden="true"></li>
+  <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+  <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+</ul> -->
+
+<div class="mobileNavBtn" ng-click="slideNav()">
+<i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+
+<ul class="mobileNavList {{class}}">
+  <li ui-sref="home" class="{{home}}">Home</li>
+  <li ui-sref="staff" class="{{staff}}">Meet the Staff</li>
+  <li ui-sref="services" class="{{serverices}}">Our Services</li>
+  <li ui-sref="resources" class="{{resources}}">Patient Resources</li>
+  <li ui-sref="contact" class="{{contact}}">Contact Us</li>
+</ul>

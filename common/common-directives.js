@@ -144,7 +144,7 @@
         el.css('height', $window.height + 'px');
       },
       controller: function($scope, $window, $state) {
-        $window.print();
+        // $window.print();
       }
     };
   })

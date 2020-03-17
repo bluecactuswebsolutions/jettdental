@@ -85,7 +85,9 @@ button {
     .slider li h5 {
       font-size: 1.1rem; }
   .ResourcePage li h3 {
-    text-align: center; } }
+    text-align: center; }
+  .header #PSA {
+    top: 0vh; } }
 
 @media (max-width: 1078px) {
   .header .topNav li {

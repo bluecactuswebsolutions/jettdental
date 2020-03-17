@@ -153,6 +153,7 @@ h3 {
 
 #PSA {
   background-color: #bead7e;
+  transition-duration: .5s;
   padding: 0;
   margin: 0;
   position: absolute;

@@ -1,0 +1,32 @@
+version: 2.1
+defaults: &defaults
+  working_directory: ~/app
+  docker:
+    - image: gradyrogers/awscli
+
+jobs:
+  deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: yarn --production=true
+      - run:
+          name: Upload to S3
+          command: |
+            BUCKET=jettdental-frontend
+            aws s3 sync admin s3://$BUCKET/admin --acl public
+            aws s3 sync common s3://$BUCKET/common --acl public
+            aws s3 sync node_modules s3://$BUCKET/node_modules --acl public
+            aws s3 sync assets s3://$BUCKET/assets --acl public
+            aws s3 cp styles/*.css s3://$BUCKET/styles/ --acl public
+            aws s3 cp index.html s3://$BUCKET/ --acl public --cache-control max-age=300 --metadata-directive REPLACE
+
+workflows:
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+          context: jettdental

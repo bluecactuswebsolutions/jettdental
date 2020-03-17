@@ -9,7 +9,7 @@
   "author": "Grady Rogers",
   "license": "UNLICENSED",
   "dependencies": {
-    "angular": "1.5.7",
+    "angular": "1.7.9",
     "angular-cookies": "1.5.8",
     "angular-route": "1.5.7",
     "@uirouter/angularjs": "1.0.25",

@@ -151,6 +151,27 @@ h3 {
 .currPage {
   background-color: rgba(185, 185, 185, 0.84); }
 
+#PSA {
+  background-color: #bead7e;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 0;
+  top: 50vh;
+  opacity: .85;
+  border-radius: .5rem;
+  color: white; }
+  #PSA p {
+    padding: .5%;
+    text-shadow: 0 0 .4rem black;
+    text-align: center; }
+  #PSA span {
+    float: right;
+    margin-right: 4%; }
+    #PSA span:hover {
+      cursor: pointer;
+      text-decoration: underline; }
+
 .floatingWelcome {
   position: absolute;
   z-index: 8;

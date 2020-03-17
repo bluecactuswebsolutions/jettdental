@@ -119,9 +119,33 @@ hr {
   background-color: $transGray;
 }
 
+#PSA {
+  background-color: $theme;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 0;
+  top: 50vh;
+  opacity: .85;
+  border-radius: .5rem;
+  color: white;
+  p {
+    padding: .5%;
+    text-shadow: 0 0 .4rem black;
+    text-align: center;
+  }
+  span {
+    float: right;
+    margin-right: 4%;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
 //==========================================//
 //============== home ======================//
-
 .floatingWelcome {
   position: absolute;
   z-index: 8;

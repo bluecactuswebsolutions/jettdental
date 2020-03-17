@@ -16,7 +16,8 @@
           controller: 'CommonController as ctrl'
         },
         'header': {
-          templateUrl: 'common/views/header.html'
+          templateUrl: 'common/views/header.html',
+          controller: 'HeaderCtrl as ctrl'
         }
       }
     })

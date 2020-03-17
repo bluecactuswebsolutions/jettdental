@@ -145,5 +145,13 @@
       $state.go('home');
     }, 2000);
 
-  });
+  })
+  .controller('HeaderCtrl', function($state, $stateParams) {
+    var vm = this;
+    vm.showPSA = true;
+
+    vm.closePSA = function() {
+      vm.showPSA = false;
+    };
+  })
 })();

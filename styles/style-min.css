@@ -340,7 +340,8 @@ iframe {
         .MemberSection ul li:nth-child(1) img {
           width: 90%; }
       .MemberSection ul li:nth-child(2) {
-        width: 50%; }
+        width: 50%;
+        vertical-align: top; }
       .MemberSection ul li h6 {
         text-align: center;
         margin: 0;
